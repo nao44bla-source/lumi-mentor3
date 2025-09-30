@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lumi sua mentora Escolar - Sua Assistente de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>🧠 lumi Mentor Escolar</h1>
+        <p>Sus assistente para estudos e bem-estar</p>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="menu-navegacao">
+        <button class="botao-menu ativo" data-aba="chat">💬 Chat</button>
+        <button class="botao-menu" data-aba="humor">😊 Meu Humor</button>
+        <button class="botao-menu" data-aba="tarefas">✅ Tarefas</button>
+        <button class="botao-menu" data-aba="professor">👨‍🏫 Visão Professor</button>
+    </nav>
+    <div class="chat-status" id="chat-status">
+    <span id="status-text">💡 Lumi Online - DeepSeek</span>
+</div>
+    <!-- ABA CHAT -->
+    <div id="chat" class="aba ativa">
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    Olá! Sou lumi sua Mentora Escolar. Pode me perguntar sobre estudos, organização ou como lidar com a ansiedade!
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem..." maxlength="200">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABA HUMOR -->
+    <div id="humor" class="aba">
+        <div class="container-humor">
+            <h2>Como você está se sentindo hoje?</h2>
+            <p>Selecione seu humor atual:</p>
+            
+            <div class="botoes-humor">
+                <button class="botao-humor" data-humor="excelente">😄 Excelente</button>
+                <button class="botao-humor" data-humor="bem">😊 Bem</button>
+                <button class="botao-humor" data-humor="normal">😐 Normal</button>
+                <button class="botao-humor" data-humor="ansioso">😰 Ansioso</button>
+                <button class="botao-humor" data-humor="triste">😔 Triste</button>
+            </div>
+            
+            <div id="resposta-humor" class="resposta-humor"></div>
+            
+            <div class="historico-humor">
+                <h3>Seu histórico de humor</h3>
+                <div id="lista-humor"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABA TAREFAS -->
+    <div id="tarefas" class="aba">
+        <div class="container-tarefas">
+            <h2>Minhas Tarefas Diárias</h2>
+            
+            <div class="adicionar-tarefa">
+                <input type="text" id="nova-tarefa" placeholder="Digite uma nova tarefa...">
+                <button id="botao-adicionar">Adicionar</button>
+            </div>
+            
+            <div class="pontuacao">
+                <span>🎯 Pontuação: <strong id="pontos">0</strong> pontos</span>
+            </div>
+            
+            <ul id="lista-tarefas" class="lista-tarefas"></ul>
+        </div>
+    </div>
+
+    <!-- ABA PROFESSOR -->
+    <div id="professor" class="aba">
+        <div class="container-professor">
+            <h2>👨‍🏫 Visão do Professor (Anônima)</h2>
+            <p>Estatísticas gerais da turma:</p>
+            
+            <div class="estatisticas">
+                <div class="estatistica">
+                    <h3>📊 Humor da Turma Hoje</h3>
+                    <div id="grafico-humor"></div>
+                </div>
+                
+                <div class="estatistica">
+                    <h3>✅ Progresso de Tarefas</h3>
+                    <p>Tarefas concluídas: <strong id="tarefas-concluidas">0</strong></p>
+                    <p>Pontuação média: <strong id="pontuacao-media">0</strong> pontos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="responses.json"></script>
+    <script src="app.js"></script>
+</body>
+</html>

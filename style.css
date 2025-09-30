@@ -1,0 +1,452 @@
+/* SISTEMA LUMI - CORES: BRANCO PRINCIPAL + LARANJA + PRETO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    min-height: 100vh;
+    color: #2c3e50; /* Cinza escuro no lugar do preto puro */
+}
+
+/* CABEÇALHO - BRANCO COM DETALHES LARANJA */
+header {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #ff8c00;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff8c00; /* Laranja no título */
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    color: #666; /* Cinza médio */
+    font-size: 1.2em;
+}
+
+/* MENU DE NAVEGAÇÃO - BRANCO COM BORDAS LARANJA */
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    padding: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ff8c00;
+}
+
+.botao-menu {
+    padding: 12px 20px;
+    border: 2px solid #ff8c00;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #ff8c00;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.botao-menu.ativo {
+    background: #ff8c00;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.botao-menu:hover {
+    background: #fff3e0;
+    transform: translateY(-2px);
+}
+
+/* ABAS - FUNDO BRANCO */
+.aba {
+    display: none;
+    padding: 25px;
+    max-width: 1000px;
+    margin: 25px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.aba.ativa {
+    display: block;
+}
+
+/* CHAT - DESIGN LIMPO E MODERNO */
+.chat-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 2px solid #e0e0e0; /* Cinza claro */
+}
+
+.chat-messages {
+    height: 450px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fafafa; /* Branco levemente acinzentado */
+}
+
+.message {
+    margin: 12px 0;
+    padding: 12px 18px;
+    border-radius: 18px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.user-message {
+    background: #ff8c00; /* Laranja para usuário */
+    color: #ffffff;
+    margin-left: auto;
+    text-align: right;
+    border: 1px solid #ff6b00;
+}
+
+.bot-message {
+    background: #f0f0f0; /* Cinza muito claro */
+    color: #333; /* Cinza escuro */
+    border: 1px solid #e0e0e0;
+}
+
+.chat-input {
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+    background: #ffffff;
+    display: flex;
+    gap: 12px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 1em;
+    background: #ffffff;
+    transition: border 0.3s;
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+.chat-input button {
+    padding: 14px 28px;
+    background: #ff8c00;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.chat-input button:hover {
+    background: #ff6b00;
+    transform: scale(1.05);
+}
+
+/* SISTEMA DE HUMOR - CARDS BRANCOS */
+.container-humor {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.botoes-humor {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.botao-humor {
+    padding: 20px;
+    font-size: 1.6em;
+    border: 3px solid #ff8c00;
+    border-radius: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 160px;
+}
+
+.botao-humor:hover {
+    background: #ff8c00;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.resposta-humor {
+    padding: 20px;
+    background: #fff3e0; /* Laranja muito claro */
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+    border-left: 4px solid #ff8c00;
+}
+
+.historico-humor {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+/* SISTEMA DE TAREFAS - DESIGN LIMPO */
+.container-tarefas {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.adicionar-tarefa {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.adicionar-tarefa input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 1em;
+    background: #ffffff;
+}
+
+.adicionar-tarefa input:focus {
+    border-color: #ff8c00;
+    outline: none;
+}
+
+.adicionar-tarefa button {
+    padding: 14px 25px;
+    background: #ff8c00;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pontuacao {
+    text-align: center;
+    padding: 18px;
+    background: #fff3e0;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    border: 2px solid #ff8c00;
+}
+
+.lista-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+.tarefa-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s;
+    background: #ffffff;
+}
+
+.tarefa-item:hover {
+    background: #f8f9fa;
+}
+
+.tarefa-item.concluida {
+    background: #f0f0f0;
+    color: #666;
+}
+
+.tarefa-checkbox {
+    margin-right: 15px;
+    transform: scale(1.3);
+    accent-color: #ff8c00;
+}
+
+/* VISÃO DO PROFESSOR - CARDS MODERNOS */
+.container-professor {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.estatistica {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #ff8c00;
+}
+
+.barra-humor {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rotulo-humor {
+    width: 100px;
+    font-weight: bold;
+    color: #333;
+}
+
+.barra {
+    flex: 1;
+    height: 20px;
+    background: #ff8c00;
+    margin: 0 12px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+/* SCROLLBAR PERSONALIZADO */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #ff8c00;
+    border-radius: 10px;
+}
+
+/* ANIMAÇÕES SUAVES */
+.message, .botao-humor, .tarefa-item {
+    transition: all 0.3s ease;
+}
+
+.botao-menu, .chat-input button, .adicionar-tarefa button {
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .menu-navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botao-menu {
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    .botoes-humor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botao-humor {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .chat-messages {
+        height: 350px;
+        padding: 15px;
+    }
+    
+    .message {
+        max-width: 90%;
+        font-size: 0.95em;
+    }
+    
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+    
+    .aba {
+        padding: 15px;
+        margin: 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+/* ESTADOS DE FOCO E INTERAÇÃO */
+button:focus, input:focus {
+    outline: 2px solid #ff8c00;
+    outline-offset: 2px;
+}
+
+/* EFEITOS DE HOVER MELHORADOS */
+.botao-menu:hover, .botao-humor:hover {
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
+}
+
+/* LOADING ANIMATION */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+/* STATUS DA IA */
+.chat-status {
+    padding: 8px 20px;
+    background: #e8f5e8;
+    color: #2d5a2d;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-bottom: 1px solid #c8e6c9;
+}
+
+.chat-status.offline {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.chat-status.thinking {
+    background: #fff3e0;
+    color: #ef6c00;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}

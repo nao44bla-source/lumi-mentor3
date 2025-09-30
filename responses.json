@@ -1,0 +1,59 @@
+{
+  "saudacoes": [
+    "Olá! Eu sou a Lumi! 💡 Como posso iluminar seus estudos hoje?",
+    "Oi! Que bom ver você! Sou a Lumi, sua mentora escolar. 😊",
+    "Olá! Lumi aqui! Pronto/a para ter um dia produtivo? 🚀",
+    "Hey! Sou a Lumi. Como posso ajudar seus estudos hoje? 📚"
+  ],
+  
+  "despedidas": [
+    "Até logo! Lembre-se: pequenos passos every day! 💪",
+    "Tchau! Volte sempre que precisar de uma luz nos estudos! 💡", 
+    "Até mais! Cuide-se e bons estudos! Lumi estará aqui! ✨",
+    "Até breve! Não esqueça de fazer pausas durante os estudos! ⏰"
+  ],
+
+  "tecnicas_estudo": [
+    "🎯 Técnica Pomodoro: 25min estudo focado, 5min pausa. Depois de 4 ciclos, descanse 15-30min!",
+    "📚 Faça resumos com SUAS palavras - isso ajuda a fixar o conteúdo!",
+    "🔍 Estude em ambiente silencioso, bem iluminado e organizado",
+    "⏰ Revise o conteúdo 24h após a aula - aumenta a retenção em 80%!",
+    "✍️ Faça mapas mentais para visualizar as conexões entre os temas",
+    "💡 Dica Lumi: Estude ativamente - faça perguntas a si mesmo sobre o conteúdo!"
+  ],
+  
+  "calma": [
+    "🌬️ Respire fundo: inspire 4 segundos, segure 4s, expire 6s. Repita 3 vezes!",
+    "💧 Tome uma água e alongue-se por 2 minutos - ajuda a renovar as energias!",
+    "⏸️ Faça uma pausa de 5 minutos. Ouça uma música calma ou observe pela janela.",
+    "📝 Anote o que está te preocupando. Às vezes colocar no papel ajuda a clarear!",
+    "🎵 Técnica 5-4-3-2-1: identifique 5 coisas que vê, 4 que ouve, 3 que toca, 2 que cheira, 1 que gosta",
+    "💡 Lumi diz: É normal se sentir assim. Você é mais forte do que imagina!"
+  ],
+  
+  "organizacao": [
+    "📅 Use uma agenda: planeje sua semana no domingo à noite!",
+    "✅ Lista de tarefas: comece pelas mais importantes ou difíceis!",
+    "⏳ Estabeleça metas realistas para cada dia de estudo", 
+    "📂 Mantenha pastas organizadas por matéria - facilita encontrar o material!",
+    "🔄 Revise seu planejamento todo dia e ajuste se necessário",
+    "💡 Dica Lumi: Divida grandes tarefas em pequenos passos conquistáveis!"
+  ],
+  
+  "motivacao": [
+    "🌟 Lembre-se: progresso é progresso, não importa o ritmo!",
+    "💪 Você é mais capaz do que imagina. Um dia de cada vez!",
+    "🎉 Celebre cada pequena conquista - isso mantém a motivação!",
+    "📈 Compare-se apenas com você mesmo: foque na sua evolução!", 
+    "🌱 Todo expert já foi iniciante. Persistência é a chave!",
+    "💡 Lumi acredita em você! Cada esforço te aproxima do seu objetivo!"
+  ],
+  
+  "default": [
+    "Hmm, interessante! Conte-me mais sobre isso...",
+    "Pode explicar um pouco melhor? Quero te ajudar!",
+    "Vamos trabalhar juntos nisso. O que você acha?",
+    "Obrigada por compartilhar! Como posso ser útil?",
+    "💡 Lumi está aqui para ajudar! Pode me contar mais?"
+  ]
+}

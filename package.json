@@ -1,0 +1,9 @@
+{
+  "name": "lumi-mentor-escolar",
+  "version": "1.0.0",
+  "description": "Chatbot educacional com IA para estudantes",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
